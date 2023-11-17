@@ -5,6 +5,9 @@
   
 # tests
 
+go test github.com/gennadyterekhov/kata_academy_go_test_task/cli_reader  
+
+go test github.com/gennadyterekhov/kata_academy_go_test_task/converter  
 
 
 # requirements  
