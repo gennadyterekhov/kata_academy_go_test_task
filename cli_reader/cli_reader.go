@@ -76,8 +76,12 @@ func getRawLine() (string, string, string, error) {
 	var err error
 
 	count, err = fmt.Scanln(&operandA, &operation, &operandB)
-	if count != 3 || err != nil {
+
+	if err != nil {
 		return operandA, operandB, operation, errors.New(err.Error())
+	}
+	if count != 3 {
+		return operandA, operandB, operation, errors.New("invalid number of arguments")
 	}
 
 	return operandA, operandB, operation, nil
