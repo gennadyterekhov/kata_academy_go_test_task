@@ -1,0 +1,1 @@
+# kata go test task
