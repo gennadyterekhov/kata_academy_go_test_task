@@ -24,3 +24,31 @@ func TestHelloEmpty(t *testing.T) {
 		t.Fatalf(`Hello("") = %q, %v, want "", error`, msg, err)
 	}
 }
+
+func Test1(t *testing.T) {
+	msg, err := Hello("")
+	if msg != "" || err == nil {
+		t.Fatalf(`Hello("") = %q, %v, want "", error`, msg, err)
+	}
+}
+
+func Test2(t *testing.T) {
+	msg, err := Hello("")
+	if msg != "" || err == nil {
+		t.Fatalf(`Hello("") = %q, %v, want "", error`, msg, err)
+	}
+}
+
+func Test3(t *testing.T) {
+	msg, err := Hello("")
+	if msg != "" || err == nil {
+		t.Fatalf(`Hello("") = %q, %v, want "", error`, msg, err)
+	}
+}
+
+func Test4(t *testing.T) {
+	msg, err := Hello("")
+	if msg != "" || err == nil {
+		t.Fatalf(`Hello("") = %q, %v, want "", error`, msg, err)
+	}
+}
