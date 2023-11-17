@@ -3,6 +3,8 @@
 
 # how to run   
   
+go run main.go
+
 # tests
 
 go test github.com/gennadyterekhov/kata_academy_go_test_task/cli_reader  
