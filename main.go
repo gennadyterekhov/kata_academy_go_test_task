@@ -2,6 +2,10 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/gennadyterekhov/kata_academy_go_test_task/calculator"
+	cliReader "github.com/gennadyterekhov/kata_academy_go_test_task/cli_reader"
+	"github.com/gennadyterekhov/kata_academy_go_test_task/converter"
 )
 
 func main() {
@@ -9,14 +13,11 @@ func main() {
 }
 
 func runCalculator() {
-	converter := CreateConverter()
-	cliReader := CreateCliReader(&converter)
 	operandA, operandB, operation, isRoman, err := cliReader.GetInput()
 	if err != nil {
 		panic(err)
 	}
 
-	calculator := CreateCalculator()
 	answer, err := calculator.Calculate(operandA, operandB, operation)
 	if err != nil {
 		panic(err)
@@ -34,6 +35,6 @@ func runCalculator() {
 	if err != nil {
 		panic(err)
 	}
-	
+
 	fmt.Println(answerAsString)
 }
